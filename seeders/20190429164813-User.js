@@ -15,11 +15,15 @@ module.exports = {
    return queryInterface.bulkInsert('Users', [{
     username: 'alvin',
     password: 'alvin',
-    role: 'admin'
+    role: 'admin',
+    createdAt: new Date,
+    updatedAt: new Date
   },{
     username: 'siapa',
     password: 'siapa',
-    role: 'biasa'
+    role: 'biasa',
+    createdAt: new Date,
+    updatedAt: new Date
   }], {});
   },
 
